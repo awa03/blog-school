@@ -9,10 +9,6 @@
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
       body { font-family: 'Inter', sans-serif; }
       .ad-pulse { animation: pulse 2s infinite; }
-      @keyframes pulse {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.7; background: red; }
-      }
       .modal-backdrop {
         background: rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(4px);
@@ -50,6 +46,7 @@
                 <div class="py-1">
                   <a href="#genesis" class="block px-4 py-2 text-sm text-gray-300 ">1: Genesis</a>
                   <a href="#appinventor" class="block px-4 py-2 text-sm text-gray-300 ">2: Second Article</a>
+                  <a href="#groupproj" class="block px-4 py-2 text-sm text-gray-300 ">3: Third Article</a>
                 </div>
               </div>
             </div>
@@ -104,6 +101,26 @@ Hi! I'm Aiden Allen, a Computer Science major at Florida State University. I spe
               </p>
             </div>
           </article>
+
+          <article id="groupproj" class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+            <img src="pic3.jpeg" alt="Second blog post image" class="w-full h-full object-cover">
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                <span>June 1000, 11111101001</span>
+                <span>•</span>
+                <span>101 min read</span>
+                <span>•</span>
+                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">App Project</span>
+              </div>
+              <h2 class="text-2xl font-bold text-gray-900 mb-3">App Inventor Entry</h2>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                During our phone call, we discussed our team responsiblies. I only managed to get in contact with Soloman this weekend. We decided that I would complete the app, the functionality of which I am not certain yet, and he would handle the presentation side.
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                I am planning on using vibration as my physical characteristic of the app, in combination with a button to change and modify the screen dynamically. I am happy with the progress that we have made thusfar, and I look forward to working in collaboration with my fellow group members.
+              </p>
+            </div>
+          </article>
           
           <div class="space-y-6">
           </div>
@@ -113,8 +130,6 @@ Hi! I'm Aiden Allen, a Computer Science major at Florida State University. I spe
           
           <div id="ad-box" class="bg-white border-2 border-blue-200 rounded-lg p-4 shadow-md ad-pulse">
             <div class="text-center">
-              <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 mx-auto mb-2"></div>
-              <p class="text-gray-500 text-sm">Loading ad...</p>
             </div>
           </div>
           <div class="bg-white rounded-lg shadow-md p-6">
