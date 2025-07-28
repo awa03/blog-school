@@ -48,7 +48,9 @@
                   <a href="#appinventor" class="block px-4 py-2 text-sm text-gray-300 ">2: Second Article</a>
                   <a href="#groupproj" class="block px-4 py-2 text-sm text-gray-300 ">3: Third Article</a>
                   <a href="#tinkercad" class="block px-4 py-2 text-sm text-gray-300 ">4: Tinkercad Creations</a>
-                  <a href="#fusion360" class="block px-4 py-2 text-sm text-gray-300 ">5: Fusion Adventures</a>
+                  <a href="#fabrication-journal" class="block px-4 py-2 text-sm text-gray-300 ">5: Fabrication</a>
+                  <a href="#fusion360" class="block px-4 py-2 text-sm text-gray-300 ">6: Fusion Adventures</a>
+
                 </div>
               </div>
             </div>
@@ -204,6 +206,29 @@ Hi! I'm Aiden Allen, a Computer Science major at Florida State University. I spe
               </p>
             </div>
           </article>
+
+          <article id="fabrication-journal" class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                <span>July 23, 2025</span>
+                <span>•</span>
+                <span>5 min read</span>
+                <span>•</span>
+                <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">3D Printing</span>
+              </div>
+              <h2 class="text-2xl font-bold text-gray-900 mb-3">3D Printing for Function</h2>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                My mouse has no space, and I am sick of it. I am currently completing my homework assignments on a bean bag in my living room, and I am unable to properly use my mouse because of a lack of space. Having an attachment would solve this issue and provide me with more space to move my mouse around.
+              </p>
+              <div class="aspect-w-16 aspect-h-9 mb-4">
+                <iframe class="w-full h-64 rounded-lg shadow" src="https://www.youtube.com/embed/OZibHXGz0A4" title="3D Printing Fix Idea" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                My video highlights the issue, and my desperate need for a desk.  
+              </p>
+            </div>
+          </article>
+
         <article id="fusion360" class="bg-white rounded-lg shadow-md overflow-hidden">
             <div class="p-6">
               <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
@@ -278,13 +303,13 @@ Hi! I'm Aiden Allen, a Computer Science major at Florida State University. I spe
 
               </div>
         </article>
-          
+
           <div class="space-y-6">
           </div>
         </div>
-        
+
         <div class="space-y-6">
-          
+
           <div id="ad-box" class="bg-white border-2 border-blue-200 rounded-lg p-4 shadow-md ad-pulse">
             <div class="text-center">
             </div>
@@ -344,97 +369,97 @@ Hi! I'm Aiden Allen, a Computer Science major at Florida State University. I spe
       </div>
     </div>
     <script>
-      function removeAdblock() {
-        const div = document.getElementById("cantStopModal");
-        div.classList.remove("hidden");
+    function removeAdblock() {
+      const div = document.getElementById("cantStopModal");
+      div.classList.remove("hidden");
+    }
+    function exitModal(){
+      const div = document.getElementById("cantStopModal");
+      div.classList.add("hidden");
+    }
+    const ads = [
+      {
+        title: "Meet singles in your area!",
+        body: "They're only 2 miles away and love programming.",
+        link: "https://example.com"
+      },
+      {
+        title: "You won't believe what this AI did...",
+        body: "It wrote code, cooked dinner, and took over the world.",
+        link: "https://example.com"
+      },
+      {
+        title: "Tired of real ads?",
+        body: "Try fake ads instead. 100% stress-free.",
+        link: "https://example.com"
+      },
+      {
+        title: "Lose 50lbs of JavaScript instantly",
+        body: "Switch to Rust. Doctors hate this one simple trick.",
+        link: "https://rust-lang.org"
+      },
+      {
+        title: "Download more RAM",
+        body: "Why buy it when you can just download it? Click now.",
+        link: "https://downloadmoreram.com"
+      },
+      {
+        title: "You've been selected!",
+        body: "To close this ad. Please do so responsibly.",
+        link: "https://example.com"
+      },
+      {
+        title: "Make your terminal sexy",
+        body: "One font, one config file, and zero productivity.",
+        link: "https://www.nerdfonts.com/"
+      },
+      {
+        title: "This startup raised $1B to reinvent the wheel",
+        body: "But this time... it's in the cloud.",
+        link: "https://example.com"
+      },
+      {
+        title: "Become a blockchain millionaire overnight",
+        body: "Step 1: Create a coin. Step 2: Rug pull. Step 3: ??",
+        link: "https://example.com"
+      },
+      {
+        title: "AI thinks you're hot",
+        body: "Click to find out which neural net fell for you.",
+        link: "https://example.com"
       }
-      function exitModal(){
-        const div = document.getElementById("cantStopModal");
-        div.classList.add("hidden");
-      }
-      const ads = [
-        {
-          title: "Meet singles in your area!",
-          body: "They're only 2 miles away and love programming.",
-          link: "https://example.com"
-        },
-        {
-          title: "You won't believe what this AI did...",
-          body: "It wrote code, cooked dinner, and took over the world.",
-          link: "https://example.com"
-        },
-        {
-          title: "Tired of real ads?",
-          body: "Try fake ads instead. 100% stress-free.",
-          link: "https://example.com"
-        },
-        {
-          title: "Lose 50lbs of JavaScript instantly",
-          body: "Switch to Rust. Doctors hate this one simple trick.",
-          link: "https://rust-lang.org"
-        },
-        {
-          title: "Download more RAM",
-          body: "Why buy it when you can just download it? Click now.",
-          link: "https://downloadmoreram.com"
-        },
-        {
-          title: "You've been selected!",
-          body: "To close this ad. Please do so responsibly.",
-          link: "https://example.com"
-        },
-        {
-          title: "Make your terminal sexy",
-          body: "One font, one config file, and zero productivity.",
-          link: "https://www.nerdfonts.com/"
-        },
-        {
-          title: "This startup raised $1B to reinvent the wheel",
-          body: "But this time... it's in the cloud.",
-          link: "https://example.com"
-        },
-        {
-          title: "Become a blockchain millionaire overnight",
-          body: "Step 1: Create a coin. Step 2: Rug pull. Step 3: ??",
-          link: "https://example.com"
-        },
-        {
-          title: "AI thinks you're hot",
-          body: "Click to find out which neural net fell for you.",
-          link: "https://example.com"
-        }
-      ];
-      const adBox = document.getElementById("ad-box");
-      let currentAd = 0;
-      function displayAd() {
-        const ad = ads[currentAd];
-        adBox.innerHTML = `
-          <div class="text-center">
-            <p class="text-xs text-gray-400 mb-2">📢 Sponsored Content</p>
-            <h3 class="font-bold text-lg text-black mb-2">${ad.title}</h3>
-            <p class="text-black text-sm mb-3">${ad.body}</p>
-            <a href="${ad.link}" target="_blank" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors">
-              Learn More →
-            </a>
-          </div>
-        `;
-        currentAd = (currentAd + 1) % ads.length;
-      }
-      setTimeout(() => {
-        displayAd();
-        setInterval(displayAd, 8000);
-      }, 2000);
-      document.addEventListener('DOMContentLoaded', function() {
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-          anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-              target.scrollIntoView({ behavior: 'smooth' });
-            }
-          });
+    ];
+    const adBox = document.getElementById("ad-box");
+    let currentAd = 0;
+    function displayAd() {
+      const ad = ads[currentAd];
+      adBox.innerHTML = `
+<div class="text-center">
+  <p class="text-xs text-gray-400 mb-2">📢 Sponsored Content</p>
+  <h3 class="font-bold text-lg text-black mb-2">${ad.title}</h3>
+  <p class="text-black text-sm mb-3">${ad.body}</p>
+  <a href="${ad.link}" target="_blank" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors">
+    Learn More →
+  </a>
+</div>
+`;
+      currentAd = (currentAd + 1) % ads.length;
+    }
+    setTimeout(() => {
+      displayAd();
+      setInterval(displayAd, 8000);
+    }, 2000);
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
         });
       });
+    });
     </script>
   </body>
 </html>
