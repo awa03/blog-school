@@ -415,6 +415,191 @@ Hi! I'm Aiden Allen, a Computer Science major at Florida State University. I spe
               </p>
             </div>
           </article>
+<article class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="p-6">
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <span>July 30, 2025</span>
+                    <span>•</span>
+                    <span>10 min read</span>
+                    <span>•</span>
+                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">3D Printing</span>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">From Digital to Physical: Mouse Stand 3D Printing Journey</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Taking my Fusion 360 mouse stand design from concept to reality (or in this case, detailed implementation plan). This post covers the complete 3D printing process, from slicing settings to real-world application testing through digital visualization.
+                </p>
+
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Digital Implementation & Scale Visualization</h3>
+                        <div class="bg-gray-50 rounded-lg p-6 mb-4">
+                            <img src="fusion/fabrication_render_final.jpg" alt="Final rendered mouse stand at actual scale" class="w-full max-w-2xl mx-auto mb-4 rounded-lg shadow-sm">
+                            <p class="text-gray-600 text-sm text-center italic">
+                                Final rendered mouse stand showing realistic materials and lighting, scaled to actual dimensions (310mm x 140mm x 18mm)
+                            </p>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            The rendered visualization shows the mouse stand in its intended environment. The glass mousepad surface would provide smooth tracking, while the recessed laptop cutout ensures a secure, wobble-free connection. At 18mm height, it provides the perfect elevation for comfortable wrist positioning during extended coding sessions.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">3D Printing Process & Settings</h3>
+                        
+                        <div class="bg-blue-50 rounded-lg p-6 mb-6">
+                            <h4 class="font-semibold text-gray-900 mb-3">Slicing Configuration (3DPrinterOS)</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <p class="font-medium text-gray-800 mb-2">Material Settings:</p>
+                                    <ul class="space-y-1 text-gray-600">
+                                        <li>• Material: PLA (White)</li>
+                                        <li>• Nozzle Temperature: 210°C</li>
+                                        <li>• Bed Temperature: 60°C</li>
+                                        <li>• Print Speed: 50mm/s</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-800 mb-2">Structure Settings:</p>
+                                    <ul class="space-y-1 text-gray-600">
+                                        <li>• Layer Height: 0.2mm</li>
+                                        <li>• Infill: 20% (Gyroid pattern)</li>
+                                        <li>• Supports: Yes (for laptop cutout overhang)</li>
+                                        <li>• Adhesion: Brim (5mm)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 mb-6">
+
+                                <h4 class="font-semibold text-gray-900 mb-2">Estimated Print Statistics</h4>
+                                <div class="bg-gray-50 rounded-lg p-4">
+                                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                                        <div class="text-center">
+                                            <p class="font-semibold text-gray-900">Print Time</p>
+                                            <p class="text-gray-600">4h 32m</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="font-semibold text-gray-900">Material Used</p>
+                                            <p class="text-gray-600">87g PLA</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="font-semibold text-gray-900">Layer Count</p>
+                                            <p class="text-gray-600">90 layers</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="font-semibold text-gray-900">Support Material</p>
+                                            <p class="text-gray-600">12g PLA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Anticipated Printing Challenges & Solutions</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-yellow-400 pl-4">
+                                <h4 class="font-semibold text-gray-900 mb-2">Challenge 1: Laptop Cutout Overhang</h4>
+                                <p class="text-gray-600 text-sm mb-2">
+                                    The recessed area for the laptop trackpad creates a significant overhang that would require careful support placement.
+                                </p>
+                                <p class="text-gray-600 text-sm">
+                                    <strong>Solution:</strong> Tree supports positioned only where necessary, with support interface layers enabled for easy removal. Post-processing with light sanding would ensure a smooth finish in the cutout area.
+                                </p>
+                            </div>
+
+                            <div class="border-l-4 border-orange-400 pl-4">
+                                <h4 class="font-semibold text-gray-900 mb-2">Challenge 2: Mousepad Surface Quality</h4>
+                                <p class="text-gray-600 text-sm mb-2">
+                                    The top surface needs to be as smooth as possible for optimal mouse tracking.
+                                </p>
+                                <p class="text-gray-600 text-sm">
+                                    <strong>Solution:</strong> Print with top surface facing up, use 0.2mm layer height for good detail, and apply light acetone vapor smoothing or sand with 400-grit paper if needed.
+                                </p>
+                            </div>
+
+                            <div class="border-l-4 border-red-400 pl-4">
+                                <h4 class="font-semibold text-gray-900 mb-2">Challenge 3: Dimensional Accuracy</h4>
+                                <p class="text-gray-600 text-sm mb-2">
+                                    The laptop cutout dimensions are critical - too tight and it won't fit, too loose and it won't be stable.
+                                </p>
+                                <p class="text-gray-600 text-sm">
+                                    <strong>Solution:</strong> Print a small test piece first to verify dimensional accuracy, then adjust the model if needed. Add 0.2mm tolerance to critical fitting dimensions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Functional Testing & Real-World Application</h3>
+
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            The visualization demonstrates how the mouse stand would transform my cramped bean bag workspace into a functional computing environment. The extended surface provides approximately 140mm x 200mm of additional mouse space - more than doubling the available tracking area.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div class="bg-gray-50 rounded-lg p-4">
+                                <h4 class="font-semibold text-gray-900 mb-2">Before Implementation</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Limited mouse movement area</li>
+                                    <li>• Frequent edge collisions</li>
+                                    <li>• Inconsistent surface texture</li>
+                                    <li>• Poor ergonomics</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 rounded-lg p-4">
+                                <h4 class="font-semibold text-gray-900 mb-2">After Implementation</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Extended smooth tracking surface</li>
+                                    <li>• Stable laptop positioning</li>
+                                    <li>• Improved wrist comfort</li>
+                                    <li>• Professional workspace feel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Design Iteration & Lessons Learned</h3>
+                        
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Through this comprehensive design and implementation planning process, several key insights emerged that would inform future iterations:
+                        </p>
+
+                        <div class="space-y-3 text-sm text-gray-600">
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <p><strong>Material Choice:</strong> PLA's ease of printing makes it ideal for prototyping, but PETG might offer better durability for daily use.</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <p><strong>Design Refinement:</strong> Future versions could include cable management channels and adjustable height mechanisms.</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <p><strong>Surface Treatment:</strong> The mousepad area might benefit from a textured surface pattern rather than relying solely on material finish, in other words adding a glass panel.</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <p><strong>Modularity:</strong> A two-piece design could eliminate support material requirements while maintaining functionality, but may introduce external issues.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-6 mt-8">
+                        <h4 class="font-semibold text-gray-900 mb-3">Project Reflection</h4>
+                        <p class="text-gray-600 leading-relaxed mb-3">
+                  This project demonstrates my ability to create a 3d printed concept piece and bring it to life to solve real world problems.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                  This mouse stand allows for ease of use on the go, in an extremely practical and portable manner.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
 
           <div class="space-y-6">
           </div>
